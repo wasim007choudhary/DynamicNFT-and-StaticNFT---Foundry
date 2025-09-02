@@ -15,9 +15,6 @@ deploy-anvil1:
 mintDy-anvil1:
 	@forge script script/DynamicMintInteraction.s.sol:MintDynamicNFT --rpc-url $(ANVIL_RPC_URL) --private-key $(ANVIL_PRIVATE_KEY) --broadcast -vvvv
 
-flip-anvil1:
-	
-	@forge script script/DynamicNFTflip.s.sol:FlipNFT --sig "run(uint256,uint256)" $(TOKEN_ID) $(MOOD) --rpc-url $(ANVIL_RPC_URL) --private-key $(ANVIL_PRIVATE_KEY) --broadcast -vvvv
 
 mint-anvil1: 
 	@forge script script/Interaction.s.sol:MintSimpleNFT --rpc-url $(ANVIL_RPC_URL) --private-key $(ANVIL_PRIVATE_KEY) --broadcast -vvvv
