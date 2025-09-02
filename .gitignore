@@ -1,15 +1,24 @@
-# Compiler files
-cache/
+# Compiled files
 out/
+cache/
+artifacts/
+build/
 
-# Ignores development broadcast logs
-!/broadcast
+# Node/VSCode specific
+node_modules/
+.vscode/
+.DS_Store
+
+# Foundry broadcast logs
+/broadcast/
 /broadcast/*/31337/
 /broadcast/**/dry-run/
 
-# Docs
-docs/
+# Ignore installed libraries (can reinstall via forge install)
+lib/
 
-# Dotenv file
+# Temporary test output / logs
+*.log
+
+# Ignore any secrets or env files
 .env
-broadcast/
