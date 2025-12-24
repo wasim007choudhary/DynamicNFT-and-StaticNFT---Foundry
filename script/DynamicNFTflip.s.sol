@@ -17,7 +17,7 @@ contract FlipNFT is Script {
 
         DynamicNFT dNFT = DynamicNFT(contractAddress);
 
-        // decide new mood
+        // Decide the mood
         DynamicNFT.Mood changeMood = (mood == 0) ? DynamicNFT.Mood.HAPPY : DynamicNFT.Mood.SAD;
 
         dNFT.upturnMoodNFT(tokenId, changeMood);
